@@ -390,6 +390,7 @@ GameObject:
   - component: {fileID: 545564960}
   - component: {fileID: 545564961}
   - component: {fileID: 545564957}
+  - component: {fileID: 545564962}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -410,8 +411,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 5
-  _magnetThrowPower: 5
-  _magnetPrefab: {fileID: 8850683953186236193, guid: 1d3c5e8d540b4ba4085103f8fdb4052c, type: 3}
 --- !u!212 &545564958
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -515,8 +514,22 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &545564962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545564956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04d599453269ece4abfaa6a3fdd30bf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _throwPower: 5
+  _projectilePrefab: {fileID: 8850683953186236193, guid: 1d3c5e8d540b4ba4085103f8fdb4052c, type: 3}
 --- !u!1 &904468219
 GameObject:
   m_ObjectHideFlags: 0
